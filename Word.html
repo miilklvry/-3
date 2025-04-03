@@ -92,39 +92,7 @@ font-family: 'Dancing Script', cursive;
             right: 20px;
             top: 50%;
             transform: translateY(-50%);
-        }
-  /* Music Controls */
-        .music-controls {
-    position: absolute;
-    bottom:10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
-        }
-
-        .music-btn {
-            padding: 5px 15px;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            background-color: #ff7b00;
-            color: white;
-            transition: background 0.3s;
-        }
-
-        .music-btn:hover {
-            background-color: #ffd29d;
-        }
-  function playMusic() {
-            document.getElementById('bg-music').play();
-        }
-
-        function pauseMusic() {
-            document.getElementById('bg-music').pause();
-        }
-
+ }
     </style>
 </head>
 <body>
@@ -168,29 +136,8 @@ font-family: 'Dancing Script', cursive;
 <br>
 
 
-        <button class="back-button" onclick="window.open('memories.html', '_self')"><3</button>
- </div>
-
-    <!-- Audio Player -->
-    <audio id="bg-music" loop>
-        <source src="file:///C:/Users/User/Documents/IMAGES/SORRY/L.mp3" type="audio/mpeg">
-    </audio>
-
-    <!-- Music Controls -->
-    <div class="music-controls">
-        <button class="music-btn" onclick="playMusic()">🎵 Play Music</button>
-        <button class="music-btn" onclick="pauseMusic()">⏸ Pause Music</button>
-    </div>
-
     <script>
- function playMusic() {
-            document.getElementById('bg-music').play();
-        }
-
-        function pauseMusic() {
-            document.getElementById('bg-music').pause();
-        }
-
+        
         function createSparkles() {
             for (let i = 0; i < 15; i++) {
                 let sparkle = document.createElement('div');
